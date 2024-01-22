@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "09FCB28B-06AA-4035-AFF7-E579CECDEB7C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3B08B85-79F5-416E-B374-0FB0DE880151"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CountdownClock/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "updateCurrentTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3B08B85-79F5-416E-B374-0FB0DE880151 - a3b7a8c0625868a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CountdownClock.ViewController.updateCurrentTime() -&gt; ()"
+                  moduleName = "CountdownClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sacofpeaches/Desktop/TylerMAD1/CountdownClock/CountdownClock/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "D3B08B85-79F5-416E-B374-0FB0DE880151 - a3b7a8c0625869e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CountdownClock.ViewController.updateCurrentTime() -&gt; ()"
+                  moduleName = "CountdownClock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sacofpeaches/Desktop/TylerMAD1/CountdownClock/CountdownClock/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "944">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB289BFC-34EB-488F-A3F4-7A62F77A8131"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CountdownClock/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "playSound()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
