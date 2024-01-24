@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountdownClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lofi-girl" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-Ds-zEQ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="hKk-M1-W5n">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed, 28 Dec 2022 14:59:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk4-vK-CaR">
+                                        <rect key="frame" x="36.666666666666657" y="0.0" width="320" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ejs-PC-FZC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmH-3t-puJ">
+                                        <rect key="frame" x="36.666666666666657" y="181" width="320" height="216"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-uY-M1n">
+                                        <rect key="frame" x="36.666666666666657" y="538" width="320" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2gD-8X-Lx5"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start Timer / Stop Music">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.35209696109999999" green="0.86078912019999998" blue="0.24110757729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="StartStopPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBf-Tb-4eq"/>
+                                            <action selector="startTimerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfX-Hy-jqU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: 00:10:15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gD-mZ-Uth">
+                                        <rect key="frame" x="36.666666666666657" y="719" width="320" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cl8-Rf-4QN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6gD-mZ-Uth" firstAttribute="height" secondItem="nk4-vK-CaR" secondAttribute="height" id="BTV-WV-3Kc"/>
+                                    <constraint firstItem="dmH-3t-puJ" firstAttribute="width" secondItem="nk4-vK-CaR" secondAttribute="width" id="CPS-2L-I9f"/>
+                                    <constraint firstItem="CaW-uY-M1n" firstAttribute="width" secondItem="nk4-vK-CaR" secondAttribute="width" id="Oom-Nc-B5k"/>
+                                    <constraint firstItem="CaW-uY-M1n" firstAttribute="height" secondItem="nk4-vK-CaR" secondAttribute="height" id="kUY-uM-waz"/>
+                                    <constraint firstItem="6gD-mZ-Uth" firstAttribute="width" secondItem="nk4-vK-CaR" secondAttribute="width" id="uxH-sk-5Eo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="U2c-Ds-zEQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="6N9-j8-U4J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hKk-M1-W5n" secondAttribute="bottom" id="IXd-hG-Wac"/>
+                            <constraint firstItem="hKk-M1-W5n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MgT-Mg-KQk"/>
+                            <constraint firstItem="U2c-Ds-zEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R5w-wT-Yle"/>
+                            <constraint firstItem="hKk-M1-W5n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S2I-T1-5hN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKk-M1-W5n" secondAttribute="trailing" id="XuE-2Q-v5y"/>
+                            <constraint firstAttribute="bottom" secondItem="U2c-Ds-zEQ" secondAttribute="bottom" id="rhN-Na-NRt"/>
+                            <constraint firstItem="U2c-Ds-zEQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vf2-BB-X6M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="U2c-Ds-zEQ" id="W1F-uG-lXh"/>
+                        <outlet property="btnStartStop" destination="CaW-uY-M1n" id="sL8-OO-Bu2"/>
+                        <outlet property="currentTimeLabel" destination="nk4-vK-CaR" id="hGk-6u-nX4"/>
+                        <outlet property="datePicker" destination="dmH-3t-puJ" id="uir-QO-Ytc"/>
+                        <outlet property="remainingTimeLabel" destination="6gD-mZ-Uth" id="tdl-R0-uYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4.9295774647887329" y="0.76335877862595414"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lofi-girl" width="1024" height="576"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
